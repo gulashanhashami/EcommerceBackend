@@ -70,4 +70,4 @@ router.get("/:id", async (req, res) => {
 
 module.exports=router;
 
-//handle CRUD operation
+//handle CRUD operation for products
