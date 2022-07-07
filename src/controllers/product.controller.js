@@ -16,8 +16,8 @@ router.post("", async(req, res)=>{
 router.get("", async(req,res)=>{
     try {
 
-      const page= +req.query.page;
-         const size= +req.query.size;
+      const page= +req.query.page || 1;
+         const size= +req.query.size || 15;
          //logic for page products
          const skip=(page-1)*size;
 
